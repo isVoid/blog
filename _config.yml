@@ -16,17 +16,11 @@
 title: Michael_Wang.blog
 email: michaelwang0905@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a Software Engineering Student, working towards a CV, Computational Photography direction.
-  I am specialized in digital imaging technician. I am the core crew member, core post production
-  member of the groundbreaking film, AWAKEN.
-  I am specialized in photography. Cityscapes and travel photography. Check my instagram for my works.
-  I am interested in anime, games, movies. Especially science fiction world building.
-  I will write about my thoughts on movies, anime etc. I will summarize my notes of me studying here.
-  Also anything related to life and food.
+  About life, work and study.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "isvoid.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: StardustMichael
+facebook_username: MichaelWangKaruta
 github_username:  isVoid
 
 # Build settings
