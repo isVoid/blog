@@ -3,6 +3,7 @@ layout: post
 title:  "机器学习笔记（一） 线性回归"
 date:   2018-02-18 13:22:00 -0600
 categories: CS Math
+published: false
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

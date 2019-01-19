@@ -3,6 +3,7 @@ layout: post
 title:  "Jekyll启用MathJax支持"
 date:   2018-02-18 12:39:00 -0600
 categories: General
+published: false
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
