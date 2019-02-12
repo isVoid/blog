@@ -6,7 +6,7 @@ categories: IOS
 published: true
 ---
 
->观察者模式是重要的代码设计模式，极大地推进了逻辑分离。早在objc时代苹果公司已经通过Key-Value Observing加以实现，swift中Apple进一步将代码简化，变得非常易用。本文借用![官方文档](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)中的代码进行分析。
+>观察者模式是重要的代码设计模式，极大地推进了逻辑分离。早在objc时代苹果公司已经通过Key-Value Observing加以实现，swift中Apple进一步将代码简化，变得非常易用。本文借用[官方文档](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)中的代码进行分析。
 
 本文使用到的来自Apple的代码，文本以及图片，版权属于Apple.
 
@@ -72,7 +72,7 @@ for _ in 1...300 {
 }
 ```
 这里给予充分的时间去煮水，最后的结果是：
-![KVODemo](/_posts/assets/avcam/KVO1.png)
+[KVODemo](/_posts/assets/avcam/KVO1.png)
 尽管加热时间远超煮开时间，到达100度后观察者已经切断电源，温度不再升高。
 
 另外像这种观察者数量很少的情况下，自我观察也是可以的。
@@ -111,4 +111,4 @@ class Boiler: NSObject {
 ```
 这样不需要另外定义观察者，KeyPath里面传入的是一个省略写法，`\.temperature`等同于`\Boiler.temperature`。
 
-More on KeyPath in Swift 4: ![Lundberg](https://www.klundberg.com/blog/swift-4-keypaths-and-you/)
+More on KeyPath in Swift 4: [Lundberg](https://www.klundberg.com/blog/swift-4-keypaths-and-you/)
