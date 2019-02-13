@@ -5,6 +5,8 @@ date:   2019-02-12 20:30:00 +0400
 categories: Photography
 published: true
 ---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 # Syllabus
 History - Lens - Photon, pixel, bits - Color, lighting - Image Processing
