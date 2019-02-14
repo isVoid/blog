@@ -73,7 +73,7 @@ refrain from using it because of the destructive effect it incur, or none is mat
 The confliction is what brings the story apart from the majority films we have
 seen, and I hope you will enjoy it as you watched it.
 
-### Cyberpunk, post apocaliptic world building
+### Cyberpunk, Post Apocaliptic World Building
 
 Now perhaps on the other hand, all depictions of Alita and stories aroudn her was
 only about contributing to the world that Fukutomi, Cameron and Rodrigeuz tries
@@ -96,6 +96,11 @@ replacements becomes common. The presentation of these technology through WETA's
 cutting edge visual effects is another big attraction not to miss.
 
 ### Visuals
+<p style="display:block; text-align:center">
+<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/3_alitaclose.jpg?raw=true" alt="poster" style="height:400px;"/>
+<br/>
+<em>Close ups - 20th Century Fox</em>
+</p>
 
 Great visuals. You have to admire WETA's techonology when it comes to CGIs. Most
 amazing fact being that Alita is indeed virtually constructed from ground up.
