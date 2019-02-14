@@ -2,9 +2,3 @@
 ---
 
 @import "{{ site.theme }}";
-
-img + em {
-  display: block;
-  text-align: center;
-  max-height: 200px;
-}
