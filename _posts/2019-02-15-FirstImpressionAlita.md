@@ -152,6 +152,11 @@ Sound FX is ok. General IMAX sound adaptation is satisfying to hear so I recomme
 watching it in an IMAX cinema if possible.
 
 ## Summary
+<p style="display:block; text-align:center">
+<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/4_actions.jpeg?raw=true" alt="poster" style="height:400px;"/>
+<br/>
+<em>Action Packed - 20th Century Fox</em>
+</p>
 
 Overall, it is a satisfying film to watch. Action lovers can find it action packed
 through out the 120 min. For visual lovers, this is (probably) the most cutting
