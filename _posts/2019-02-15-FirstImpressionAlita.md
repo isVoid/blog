@@ -38,7 +38,7 @@ is confirmed to be directed by Robert Rodrigeuz and co-produced by Cameron.
 ### Story (No Spoilers)
 
 <p style="display:block; text-align:center">
-<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/2_Alita.jpg?raw=true" alt="poster" style="height:400px;"/>
+<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/2_alita.jpeg?raw=true" alt="poster" style="height:400px;"/>
 <br/>
 <em>Alita - 20th Century Fox</em>
 </p>
