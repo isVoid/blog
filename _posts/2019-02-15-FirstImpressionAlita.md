@@ -9,8 +9,12 @@ published: true
 
 # First Impressions: Alita: Battle Angel (No Spoilers)
 
-![poster](https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg?raw=true)
-*Poster - 20 Century Fox*
+<p style="display:block; text-align:center">
+<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg?raw=true" alt="poster" style="height:400px;"/>
+<br/>
+<em>Poster - 20th Century Fox</em>
+</p>
+
 
 When it comes to cyberpunk world building, some major names are to be
 mentioned: Blade Runner, Ghost in the Shell, the Matrix, etc. On this valentines
