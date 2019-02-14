@@ -9,7 +9,7 @@ published: true
 
 # First Impressions: Alita: Battle Angel (No Spoilers)
 
-![poster](/_posts/assets/Alita_Battle_Angel/1_poster.jpg)
+![poster](https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg)
 *Poster - 20 Century Fox*
 
 When it comes to cyberpunk world building, some major names are to be
