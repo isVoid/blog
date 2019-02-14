@@ -34,8 +34,15 @@ as 2005. However he could never move on to the real adaptation of the film since
 he was commisioned by 20th Century Fox on Avartar and its sequels. In 2016 the film
 is confirmed to be directed by Robert Rodrigeuz and co-produced by Cameron.
 
-## Art
+## Thoughts
 ### Story (No Spoilers)
+
+<p style="display:block; text-align:center">
+<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/2_Alita.jpg?raw=true" alt="poster" style="height:400px;"/>
+<br/>
+<em>Alita - 20th Century Fox</em>
+</p>
+
 Even knowing the back story before I entered the cinema, I was expecting to see
 a film that's disappointing yet packed with action that busy one's eyeball. Well,
 I was wrong. My fixed sterotype on big budget Hollywood films tells me it will be
