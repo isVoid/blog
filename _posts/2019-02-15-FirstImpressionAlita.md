@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First Impressions - "Alita: Battle Angel" (No Spoilers)"
+title:  "First Impressions - \"Alita: Battle Angel\" (No Spoilers)"
 date:   2019-02-14 23:48:00 +0400
 categories: Film Reviews
 published: true
