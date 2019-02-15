@@ -40,7 +40,7 @@ is confirmed to be directed by Robert Rodrigeuz and co-produced by Cameron.
 ### Story (No Spoilers)
 
 <p style="display:block; text-align:center">
-<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/2_alita.jpeg?raw=true" alt="poster" style="height:400px;"/>
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/2_alita.jpeg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
 <br/>
 <em>Alita - 20th Century Fox</em>
 </p>
@@ -153,7 +153,7 @@ watching it in an IMAX cinema if possible.
 
 ## Summary
 <p style="display:block; text-align:center">
-<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/4_actions.jpeg?raw=true" alt="poster" style="height:400px;"/>
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/4_actions.jpeg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
 <br/>
 <em>Action Packed - 20th Century Fox</em>
 </p>
