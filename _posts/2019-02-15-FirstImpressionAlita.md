@@ -17,21 +17,21 @@ published: true
 
 
 When it comes to cyberpunk world building, some major names are to be
-mentioned: Blade Runner, Ghost in the Shell, the Matrix, etc. On this valentines
-day, a very special movie put its mark on the board - Battle Angel Alita.
-I was lucky enough to book a seat on a night packed with valentine couples and
-enjoyed it on the Laser IMAX screen in Mall of the Emirates VOX cinema, and
-here are my first thoughts.
+mentioned: Blade Runner, Ghost in the Shell, the Matrix, etc. On this Valentines
+Day, a very special film put its mark on the board - Alita: Battle Angel.
+I was lucky enough to book a seat on a night packed with Valentine couples and
+enjoyed it on the Laser IMAX screen in Mall of the Emirates VOX cinema. Here are
+my first impressions.
 
 ## Background
 
-To understand the film better, here is a little trivia. This film was originally
+Here are some background knowledge for better understanding. This film was originally
 written and drawn by Japanese Comic Artist Yukito Kushiro. It was first adapted
 into an "OVA" (Original Video Animation) in 1993 by Hiroshi Fukutomi. James Cameron
-had an intrigue with the film itself the moment he saw the animation and decided
-to adapt it into a major production film. James scripted for the adaptation as early
+had an intrigue with the story itself the moment he saw the animation and decided
+to adapt it into a major production film. James scripted the adaptation as early
 as 2005. However he could never move on to the real adaptation of the film since
-he was commisioned by 20th Century Fox on Avartar and its sequels. In 2016 the film
+he was commisioned to work on Avatar and its sequels. Finally in 2016 the film
 is confirmed to be directed by Robert Rodrigeuz and co-produced by Cameron.
 
 ## Thoughts
@@ -44,15 +44,14 @@ is confirmed to be directed by Robert Rodrigeuz and co-produced by Cameron.
 </p>
 
 Even knowing the back story before I entered the cinema, I was expecting to see
-a film that's disappointing yet packed with action that busy one's eyeball. Well,
-I was wrong. My fixed sterotype on big budget Hollywood films tells me it will be
+a film that's disappointing yet packed with action that keep one's eyeball busy. My fixed sterotype on big budget Hollywood films informs me it will be
 nothing better than the adaptation from Masamune's Ghost in the Shell Manga series
 to the Rubert Sander's film. Political elements demanded for a Americanized
 storytelling method that attracts to the "Joe Sixpacks" or "Soccer Moms", the
 widest population that guarentees a maximized return. 150 million is a too big
 gamble to take.
 
-Well, I was dead wrong. Apparently I do not know well enough about James Cameron
+It turns out I was only half right about the action part. Apparently I do not know well enough about James Cameron
 and was amazed by his ability to persist the best possible of the essence
 of the Japanese storytelling technique. Even under the presumption that I have
 not seen the original manga before, there are apparent elements that brings the
@@ -61,21 +60,21 @@ are heavy manga readers like I do.
 
 For people who are unfamiliar with this kind of storytelling, one may feel unease
 at this plot. Now the story itself is very much about Alita herself, but there is
-much more to that. The story aims to develop her as a hero, but not by absolute
+much more to that. The story aims to develop her as a hero, but not by an absolute
 moral standard. There are moments when audience could even question the motivation
 of the decisions she make, about the consequences it will lead to. There are both
 light and dark sides in Alita, her companions, and even her enemies. She has the
 loving side as a teenage girl and the cruelty as the battle angel. Consequently
 the mixed characteristics arouses an unspeakable connection between me and her.
 Should I stand by herside, or recess from the all-conquering battle arts she
-possess? The question is raised when thinking: should one possesses great power
+possess? The question rises: should one possesses great power
 refrain from using it because of the destructive effect it incur, or none is mattered?
-The confliction is what brings the story apart from the majority films we have
+The confliction is what brings the story standing out from the majority films we have
 seen, and I hope you will enjoy it as you watched it.
 
 ### Cyberpunk, Post Apocaliptic World Building
 
-Now perhaps on the other hand, all depictions of Alita and stories aroudn her was
+Now perhaps on the other hand, all depictions of Alita and stories around her was
 only about contributing to the world that Fukutomi, Cameron and Rodrigeuz tries
 to build. As mentioned the story is staged in a cyberpunk and post apocaliptic world.
 If you are cyberpunk fans, this will be a great feast. Like Bladerunner, Alita's
@@ -89,9 +88,9 @@ companion takes.
 
 Besides, similar to Ghost in the Shell, the story also involves discussion of soul
 and flesh. It raises questions about the definition of true self and ultimately
-leads to the discussion of "Ship of Theseus". Unfortunately the discussion was never
+leads to the discussion in ontology. Unfortunately the discussion was never
 digged deep enough limited by the length of the film, which is over 120 minutes but
-mostly packed with action scenes. There are cyborgs and body part
+mostly occupied with action scenes. There are cyborgs and body part
 replacements becomes common. The presentation of these technology through WETA's
 cutting edge visual effects is another big attraction not to miss.
 
@@ -102,19 +101,18 @@ cutting edge visual effects is another big attraction not to miss.
 <em>Close ups - 20th Century Fox</em>
 </p>
 
-Great visuals. You have to admire WETA's techonology when it comes to CGIs. Most
+You have to admire WETA's techonology when it comes to CGIs. Most
 amazing fact being that Alita is indeed virtually constructed from ground up.
 The figure is construted from polygons, with shading, textures and lighting,
 reaching ultimate photorealism. The close up shots persists throughout the films
 shows the amount of details that persists in her huge manga-like eyes, on her soft
-smooth human face skin and her textureless reflective alloy body. While in Avartar,
+smooth human face skin and her textureless reflective alloy body. While in Avatar,
 an alien would yield no resemblence to human and therefore there is no true reference
-of what is "real" or not; for Alita, she indeed holds the human features. WETA's
+of what is "real" or not; for Alita, she indeed holds ample human features. WETA's
 realization of her figure makes audience telling no pecularity when she stands next
-to Christopher Waltz, a character only captured by real cameras. The motion capture
+to Christopher Waltz, an actor only captured by cinema cameras. The motion capture
 also adopted a dual dummy system - one for the actress, the other for the character.
-The motion data is first matched from capture to the actress model and later transferred
-to the character model.
+The motion data is first matched from capture to the actress model and later transferred to the character.
 
 Rosa Salazar was casted as the actress who "impersonate" Alita. More than merely
 the motion capture stunt role, her facial expression also contributed hugely to
@@ -165,6 +163,12 @@ a feast you cannot miss.
 
 Whether it is a lengendary movie is left to be discussed. Metacritc has it on 53%,
 a mixed review range. Conflicted emotion and plots leads to too many unanswered
-questions before the story ends. But at least one thing for certain - a respect
+questions before the story ends. But at least one thing is certain - a respect
 is paid, for the first time in any production of this scale in the western world,
 to Fukutomi, the original creative mind behind the plot itself.
+
+---
+More to Read:
+
+1. [Desowitz on VFX](https://www.indiewire.com/2019/02/alita-battle-angel-robert-rodriguez-james-cameron-weta-digital-visual-effects-1202043604/)
+2. [Nordine Reviews](https://www.indiewire.com/2019/01/alita-battle-angel-review-robert-rodriguez-rosa-salazar-1202040087/)
