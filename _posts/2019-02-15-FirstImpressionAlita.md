@@ -10,7 +10,9 @@ published: true
 # First Impressions - "Alita: Battle Angel" (No Spoilers)
 
 <p style="display:block; text-align:center">
-<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg?raw=true" alt="poster" style="height:400px;"/>
+
+<img height="400" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
+
 <br/>
 <em>Poster - 20th Century Fox</em>
 </p>
@@ -96,7 +98,7 @@ cutting edge visual effects is another big attraction not to miss.
 
 ### Visuals
 <p style="display:block; text-align:center">
-<img src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/3_alitaclose.jpg?raw=true" alt="poster" style="height:400px;"/>
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/3_alitaclose.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
 <br/>
 <em>Close ups - 20th Century Fox</em>
 </p>
