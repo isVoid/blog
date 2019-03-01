@@ -9,7 +9,7 @@ published: true
 > 感觉Android例程不是很友好= =（与AVCam相比缺少一篇完整的文章解释）[github地址](https://github.com/googlesamples/android-Camera2Basic)
 
 # 截图
-![Screenshot](https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_posts/assets/camera2/cam2basic.png)
+![Screenshot](https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_posts/assets/camera2/cam2basic.png){: height="400px"}
 
 # 拍摄管道（概览）
 按下"Picture"之后发生了什么？
