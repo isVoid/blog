@@ -35,6 +35,11 @@ in English writing, speaking, listening and reading.
       </a>
   </div>
   <div class="column">
+    <a data-fancybox="myself" href="/photos/myself/bn2.jpg" data-caption="AWAKEN crew, Estonia">
+        <img src="/photos/myself/thumb/thumb_bn2.jpg">
+      </a>
+  </div>
+  <div class="column">
     <a data-fancybox="myself" href="/photos/myself/dubai.jpg" data-caption="Index Tower, Dubai">
         <img src="/photos/myself/thumb/thumb_dubai.jpg">
       </a>
@@ -67,6 +72,11 @@ in English writing, speaking, listening and reading.
   <div class="column">
     <a data-fancybox="myself" href="/photos/myself/sandbuggies.jpg" data-caption="Abu Dhabi, UAE">
         <img src="/photos/myself/thumb/thumb_sandbuggies.jpg">
+      </a>
+  </div>
+  <div class="column">
+    <a data-fancybox="myself" href="/photos/myself/bn1.jpg" data-caption="Tom and I, Estonia">
+        <img src="/photos/myself/thumb/thumb_bn1.jpg">
       </a>
   </div>
   <div class="column">
