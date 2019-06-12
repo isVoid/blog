@@ -7,8 +7,6 @@ published: true
 ---
 
 
-# First Impressions - "Alita: Battle Angel" (No Spoilers)
-
 <p style="display:block; text-align:center">
 
 <img height="400" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/Alita_Battle_Angel/1_Poster.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>

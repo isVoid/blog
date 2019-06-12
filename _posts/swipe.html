@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Swipes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- <link href="css/foundation.css" rel="stylesheet" type="text/css" /> -->
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+
+  <!-- Custom styles for this template -->
+  <style>
+    body {
+      padding-top: 54px;
+    }
+    @media (min-width: 992px) {
+      body {
+        padding-top: 56px;
+      }
+    }
+
+  </style>
+
+</head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Noise Reduction Algorithm Compare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NRSiteNavToggler" aria-controls="NRSiteNavToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="NRSiteNavToggler">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="swipe.html">Swipes</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="magnifier.html">Magnifier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="showcase.html">Showcase</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="row mt-5 form-group">
+          <h3 id="title" class="form-label">Groundtruth Against </h3>
+          <div class="col-lg-2">
+          <select id="against" onchange="change_against()" class="form-control">
+            <option value="noisy">noisy</option>
+            <option value="denoisenet">denoisenet</option>
+            <option value="bm3d">bm3d</option>
+            <option value="dncnn">dncnn</option>
+            <option value="acr">acr</option>
+            <option value="neatvideo">neat video</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="compare">
+            <img src="img/b8_gt.jpg" />
+            <img id="against_img" src="img/b8_noisy.jpg" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-5">
+        <h3>Advised view on large screen and on chrome browser with zoom 200%</h3>
+      </div>
+
+    </div>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" charset="utf-8"></script>
+    <script>
+    function change_against() {
+        against = $("#against").val()
+        if (against == "noisy")
+          document.getElementById("against_img").src = "img/b8_noisy.jpg"
+        else if (against == "groundtruth")
+          document.getElementById("against_img").src = "img/b8_gt.jpg"
+        else if (against == "bm3d")
+          document.getElementById("against_img").src = "img/b8_bm3d.jpg"
+        else if (against == "dncnn")
+          document.getElementById("against_img").src = "img/b8_dncnn.jpg"
+        else if (against == "acr")
+          document.getElementById("against_img").src = "img/b8_acr.jpg"
+        else if (against == "neatvideo")
+          document.getElementById("against_img").src = "img/b8_neat.jpg"
+        else if (against == "denoisenet")
+          document.getElementById("against_img").src = "img/b8_denoise.jpg"
+
+
+        $(".compare").twentytwenty({default_offset_pct: 0.7, before_label: "groundtruth", after_label: against});
+    }
+
+    $(function(){
+      $(".compare").twentytwenty({default_offset_pct: 0.7, before_label: "groundtruth", after_label: "noisy"});
+    });
+
+    window.addEventListener('DOMContentLoaded',
+      function() {
+        sources = ["img/b8_noisy.jpg", "img/b8_gt.jpg", "img/b8_bm3d.jpg", "img/b8_dncnn.jpg",
+          "img/b8_acr.jpg", "img/b8_neat.jpg", "img/b8_denoise.jpg", "img/Method_1.jpg",
+          "img/Method_2.jpg"]
+
+        var images = [];
+        for (i = 0, length = sources.length; i < length; i++) {
+          images[i] = new Image();
+          images[i].src = sources[i]
+        }
+      }, false);
+
+    </script>
+  </body>
+</html>
