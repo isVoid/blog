@@ -20,7 +20,7 @@ I grow to become a photography enthusiast. Throughout my trip across the globe a
 meetings with artists, I developed my own perspectives in natural history and cityscape
 photography.
 
-I am English-Chinese bilingual. My native language is Chinese, with native proficiency
+I am English-Chinese bilingual. My native language is Chinese, with proficiency
 in English writing, speaking, listening and reading.
 
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
