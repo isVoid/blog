@@ -13,16 +13,20 @@ layout: default
     <ul class="post-list">
       {%- for post in site.projects reversed -%}
       <li>
-        <img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/canny.bmp?raw=true" alt="poster" style="max-height:200px; width:auto; height:auto"/>
-        <div class="one-half">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {{ post.excerpt }}
+        <div class="row">
+          <div class="column">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {{ post.excerpt }}
+          </div>
+          <div class="column" style="margin-left:100px; aligns: center">
+            <img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_projects/assets/{{post.titleimage}}?raw=true" alt="poster" style="max-height:200px; width:auto; height:auto"/>
+          </div>
         </div>
       </li>
       {%- endfor -%}

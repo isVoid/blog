@@ -5,6 +5,7 @@ date: '2019-06-20 10:00:00 +0800'
 categories: CV
 published: true
 excerpt: Handwritten digits have wide applications. SSNs, credit card numbers, telephone numbers are commonly seen in written forms. This project explores tasks of extracting notes with digits and recognizing them.
+titleimage: 2019-06-20-HandwrittenDigitsScanner.jpg
 ---
 
 Handwritten digits have wide applications. SSNs, credit card numbers, telephone numbers are commonly seen in written forms. Digitizing these data is an important task for archiving, encryption and transferring purposes. A naive approach for these task is to recognize the texts by human eyes and typing the data into the computer. This approach, though viable, is not scalable. This is when Computer Vision techniques can be applied. One of the earliest application of computer vision involves pioneering work from Yann Lecun to recognize written postcodes in sorting facilities of US postal service.
