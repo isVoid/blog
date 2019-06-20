@@ -47,7 +47,7 @@ This application takes on a simpler pre-condition, where digits are written from
 <p style="display:block; text-align:center">
 <img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/written_texts.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
 <br/>
-<em>Various written texts forms - printed, and written calligraphy arts</em>
+<em>Various texts forms - printed, and written calligraphy arts</em>
 </p>
 
 ### Text Detection
@@ -72,6 +72,12 @@ In this application, we trained a neural network inspired from top-ranking Kaggl
 
 For note region extraction, current algorithm is prone to varied lighting conditions. For example, if some specular light lies between the border of the note and its background, Hough transform may fail to detect the border since the edge is blurred. Varied lighting conditions also affects text detection. A strong shadow casted upon a character could make it too dark to appear in the binearized image. In these scenarios, a global image light balancing preprocess stage.
 
-Another approach is to apply learnt models to both text detection and border extraction. A learning based model is robust under various conditions, including different lighting scenarios, orientations and occlusions. For text detection, it can handle connected characters and different writing styles, as long as the dataset contains such images.
+Another approach is to apply learnt models to both text detection and border extraction. A learning based model is robust under various conditions, including different lighting scenarios, orientations and occlusions. For text detection, it can handle connected characters and different writing styles, as long as the dataset contains such images. Such system is end to end, reducing cumulated error from a multi staged system.
+
+<p style="display:block; text-align:center">
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/failed_cases.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
+<br/>
+<em>Cumulated error could lead to wrong recognitions.</em>
+</p>
 
 <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>[github repo](https://github.com/isVoid/WrittenDigitRecognizer)
