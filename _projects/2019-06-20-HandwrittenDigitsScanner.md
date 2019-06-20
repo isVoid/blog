@@ -4,8 +4,8 @@ title: Handwritten Digits OCR
 date: '2019-06-20 10:00:00 +0800'
 categories: CV
 published: true
+excerpt: Handwritten digits have wide applications. SSNs, credit card numbers, telephone numbers are commonly seen in written forms. This project explores tasks of extracting notes with digits and recognizing them.
 ---
-![title image](https://raw.githubusercontent.com/isVoid/WrittenDigitRecognizer/master/example/example.jpg)
 
 Handwritten digits have wide applications. SSNs, credit card numbers, telephone numbers are commonly seen in written forms. Digitizing these data is an important task for archiving, encryption and transferring purposes. A naive approach for these task is to recognize the texts by human eyes and typing the data into the computer. This approach, though viable, is not scalable. This is when Computer Vision techniques can be applied. One of the earliest application of computer vision involves pioneering work from Yann Lecun to recognize written postcodes in sorting facilities of US postal service.
 
@@ -16,7 +16,7 @@ This project explores two different but interally correlated tasks of digits not
 Commonly speaking, a note region is rectangular. In order to highlight the rectangular region, most importantly, to distinguish the borders of the note from the rest of the image, we preprocess the input photo with Canny transform, which outputs an image that binearize the egdes in the photo. We further cleaned the transformed-image with non-maximal suppression in 8 directions for each pixel. The transformed is a binearized photo, where apparent edges is marked as 1, the rest is marked as 0.
 
 <p style="display:block; text-align:center">
-<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/canny.bmp?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/canny.bmp?raw=true" alt="poster" style="max-height:200px; width:auto; height:auto"/>
 <br/>
 <em>Canny Transformed</em>
 </p>
@@ -24,7 +24,7 @@ Commonly speaking, a note region is rectangular. In order to highlight the recta
 With Canny transformed image, we will then apply Hough transform to convert the image from x-y coordinate space to rho-theta space. Any line that appears in x-y space will show up as a dot in rho-theta space. Statistically we have more tools to deal with dots then lines - namely, data clustter. We then apply k-means clusttering to find the top-4 clusters from the rho-theta space. The result could be converted for the edges of the rectangular region in the input photo. Computing the intersects of the edges results in the 4 corners of the region.
 
 <p style="display:block; text-align:center">
-<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/hough_space.jpg?raw=true" alt="poster" style="max-height:400px; width:auto; height:auto"/>
+<img height="400px" src="https://github.com/isVoid/isvoid.github.io/blob/master/_posts/assets/ocr/hough_space.jpg?raw=true" alt="poster" style="max-height:200px; width:auto; height:auto"/>
 <br/>
 <em>Hough Space - the 4 dense points represent the 4 detected edges</em>
 </p>
