@@ -19,10 +19,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website from Yinghao Michael Wang.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://isvoid.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-facebook_username: MichaelWangKaruta
-instagram_username: Wangasta
-github_username:  isVoid
+url: "https://yinghaowang.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+
+minima:
+  social_links:
+    github: isVoid
+    facebook: MichaelWangKaruta
+    instagram: Wangasta
+    leetcode: curemilky
 
 collections:
   technology:
