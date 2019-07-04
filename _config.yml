@@ -38,6 +38,8 @@ collections:
   projects:
     output: true
 
+google_analytics: UA-143315291-1
+
 # Build settings
 markdown: kramdown
 theme: minima
