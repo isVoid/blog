@@ -5,13 +5,13 @@ date: '2019-07-02 15:02:00 +0800'
 ---
 
 ### Data Structures:
-78 Subset(Also Bitset)
-94 Binary Tree Inorder Traversal (Inorder Tree Traversal Iterative Approach)
-98 Validate Binary Tree
-102 Level Order Traversal
-114 Binary Tree To Linked List (Reversed Post Order Traversal)
-138 Deep Copy List with Random Pointers (Hashmap to save past pointer & future pointers)
-347 TopKFrequencies (**Priority Queue!**, complexity analysis)
+78 Subset(Also Bitset)  
+94 Binary Tree Inorder Traversal (Inorder Tree Traversal Iterative Approach)  
+98 Validate Binary Tree  
+102 Level Order Traversal  
+114 Binary Tree To Linked List (Reversed Post Order Traversal)  
+138 Deep Copy List with Random Pointers (Hashmap to save past pointer & future pointers)  
+347 TopKFrequencies (**Priority Queue!**, complexity analysis)  
 
 ### Arithmatics:
 29 Divide2Integers
