@@ -12,6 +12,7 @@ date: '2019-07-02 15:02:00 +0800'
 114 Binary Tree To Linked List (Reversed Post Order Traversal)  
 138 Deep Copy List with Random Pointers (Hashmap to save past pointer & future pointers)  
 347 TopKFrequencies (**Priority Queue!**, complexity analysis)  
+341 Flatten Nested List Iterator (stack)
 
 ### Arithmatics:
 29 Divide2Integers
