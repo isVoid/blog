@@ -118,6 +118,8 @@ d3.csv("assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(d
     .attr("fill", "black")
     .attr("font-family", "sans-serif")
     .attr("class", (d, i) => { return `yAxisLabel label_row${i}`; });
+
+    frame.on("click", onMouseOut)
 });
 
 function createDataLabel(tyr, x, unitHeight) {
@@ -147,33 +149,6 @@ function createDataLabel(tyr, x, unitHeight) {
     .attr("class", (d) => { return `row${d[1]} datalabel`})
     yAxisLabelsYPos = [];
 
-  // var datalabels = svg.append("g")
-  // var l = datalabels.selectAll("text").data(dataset).enter()
-  //   .append("text")
-  //   .text((d) => {
-  //     return d[tyr];
-  //   })
-  //   .attr("x", x)
-  //   .attr("y", (d, i) => {
-  //     let y = height - unitHeight * d[tyr] + 5 / 2;
-  //     var near = null;
-  //     yAxisLabelsYPos.forEach((d) => {
-  //       if (Math.abs(y - d[0]) <= 11) {
-  //         near = Math.max(near, d[0]);
-  //       }
-  //     })
-  //     if (near) y = near + 11;
-  //     yAxisLabelsYPos.push([y, i]);
-  //     return y;
-  //   })
-  //   .attr("stroke", (d) => {
-  //     return ("rgba(" + parseInt(255 - 2 * d.t5yr) + "," +
-  //       parseInt(2 * d.t20yr) + "," + parseInt(2 * d.t5yr) + " ,0.5)")
-  //   })
-  //   .attr("class", (d, i) => { return `row${i} datalabel`})
-  //   yAxisLabelsYPos = [];
-
-    // l.sort((a, b) => {return a[tyr] > b[tyr];})
 }
 
 function createStandardErrorLabel(tyr, tse, x, unitHeight) {
