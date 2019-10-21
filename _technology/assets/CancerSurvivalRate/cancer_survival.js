@@ -37,7 +37,7 @@ var rowConverter = function(d) {
     t20se: parseFloat(d.t20se),
   };
 }
-d3.csv("cancer_survival.csv", rowConverter, function(data) {
+d3.csv("https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(data) {
 
   dataset = data;
 
