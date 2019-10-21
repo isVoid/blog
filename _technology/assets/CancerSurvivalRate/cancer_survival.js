@@ -37,7 +37,7 @@ var rowConverter = function(d) {
     t20se: parseFloat(d.t20se),
   };
 }
-d3.csv("https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(data) {
+d3.csv("assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(data) {
 
   dataset = data;
 
@@ -267,29 +267,29 @@ function createTitle() {
 }
 
 function onMouseOver(d, i) {
-  d3.selectAll(".element").attr("stroke", "rgba(128, 128, 128, 0.2)");
-  d3.selectAll(".datalabel").attr("stroke", "rgba(128, 128, 128, 0.2)").attr("fill", "rgba(128, 128, 128, 0.2)");
-  d3.selectAll(".yAxisLabel").attr("stroke", "rgba(128, 128, 128, 0.2)").attr("fill", "rgba(128, 128, 128, 0.2)");
+  frame.selectAll(".element").attr("stroke", "rgba(128, 128, 128, 0.2)");
+  frame.selectAll(".datalabel").attr("stroke", "rgba(128, 128, 128, 0.2)").attr("fill", "rgba(128, 128, 128, 0.2)");
+  frame.selectAll(".yAxisLabel").attr("stroke", "rgba(128, 128, 128, 0.2)").attr("fill", "rgba(128, 128, 128, 0.2)");
 
   d3.select(this).attr("stroke", linesColor[i]);
-  d3.selectAll(`.row${i}`).attr("stroke", "rgba(0, 0, 0, 0)").attr("fill", "rgba(0, 0, 0, 1)");
-  d3.select(`.label_row${i}`).attr("fill", "black");
-  d3.selectAll(`.seLine`).filter(`.row${i}`).attr("visibility", "visible");
+  frame.selectAll(`.row${i}`).attr("stroke", "rgba(0, 0, 0, 0)").attr("fill", "rgba(0, 0, 0, 1)");
+  frame.select(`.label_row${i}`).attr("fill", "black");
+  frame.selectAll(`.seLine`).filter(`.row${i}`).attr("visibility", "visible");
 }
 
 function onMouseOut(d, i) {
-  d3.selectAll("path")
+  frame.selectAll("path")
     .attr("stroke", (d, i) => {
       return linesColor[i];
     })
-  d3.selectAll("*[class^=\"row\"]")
+  frame.selectAll("*[class^=\"row\"]")
     .attr("fill", "rgba(0, 0, 0, 1)")
     .attr("stroke", (d, i) => {
       return linesColor[i % dataset.length];
     });
-  d3.selectAll(".datalabel")
+  frame.selectAll(".datalabel")
     .attr("stroke", "rgba(0, 0, 0, 0)").attr("fill", "rgba(0, 0, 0, 1)");
-  d3.selectAll(".yAxisLabel")
+  frame.selectAll(".yAxisLabel")
     .attr("fill", "black");
-  d3.selectAll(".seLine").attr("visibility", "hidden");
+  frame.selectAll(".seLine").attr("visibility", "hidden");
 }
