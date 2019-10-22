@@ -73,7 +73,9 @@ d3.csv("assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(d
     .attr("fill", "none")
     .attr("class", "element")
     .on("mouseover", onMouseOver)
-    .on("mouseout", onMouseOut);
+    .on("mouseout", onMouseOut)
+    .on("touchstart", onMouseOver)
+    .on("touchend", onMouseOut)
 
   //Standard Error Labels
   for (var i = 0; i < 4; i++) {
@@ -119,7 +121,6 @@ d3.csv("assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(d
     .attr("font-family", "sans-serif")
     .attr("class", (d, i) => { return `yAxisLabel label_row${i}`; });
 
-    frame.on("click", onMouseOut)
 });
 
 function createDataLabel(tyr, x, unitHeight) {
