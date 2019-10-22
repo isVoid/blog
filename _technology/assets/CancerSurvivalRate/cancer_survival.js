@@ -1,3 +1,5 @@
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 let w = 2000, h = 2000;
 //Mike Bostock's Margin Standard
 var margin = {top: 150, right: 30, bottom: 30, left: 30};
@@ -49,33 +51,61 @@ d3.csv("assets/CancerSurvivalRate/cancer_survival.csv", rowConverter, function(d
 
   //Lines
   var lines = svg.append("g");
-  lines.selectAll("path")
-    .data(dataset)
-    .enter()
-    .append("path")
-    .attr('d',
-      (function(d) {
-        return lineGenerator(
-          [
-            [250, (height - unitHeight * d.t5yr)],
-            [400, (height - unitHeight * d.t10yr)],
-            [550, (height - unitHeight * d.t15yr)],
-            [700, (height - unitHeight * d.t20yr)]
-          ])
-      }))
-    .attr("stroke-width", stroke_width)
-    .attr("stroke", function(d) {
-      let color = "rgba(" + parseInt(255 - 2 * d.t5yr) + "," +
-        parseInt(2 * d.t20yr) + "," + parseInt(2 * d.t5yr) + " ,0.5)";
-      linesColor.push(color);
-      return color;
-    })
-    .attr("fill", "none")
-    .attr("class", "element")
-    .on("mouseover", onMouseOver)
-    .on("mouseout", onMouseOut)
-    .on("touchstart", onMouseOver)
-    .on("touchend", onMouseOut)
+  if (isMobile) {
+    lines.selectAll("path")
+      .data(dataset)
+      .enter()
+      .append("path")
+      .attr('d',
+        (function(d) {
+          return lineGenerator(
+            [
+              [250, (height - unitHeight * d.t5yr)],
+              [400, (height - unitHeight * d.t10yr)],
+              [550, (height - unitHeight * d.t15yr)],
+              [700, (height - unitHeight * d.t20yr)]
+            ])
+        }))
+      .attr("stroke-width", stroke_width)
+      .attr("stroke", function(d) {
+        let color = "rgba(" + parseInt(255 - 2 * d.t5yr) + "," +
+          parseInt(2 * d.t20yr) + "," + parseInt(2 * d.t5yr) + " ,0.5)";
+        linesColor.push(color);
+        return color;
+      })
+      .attr("fill", "none")
+      .attr("class", "element")
+      .on("touchstart", onMouseOver)
+      .on("touchend", onMouseOut)
+  }
+  else {
+    lines.selectAll("path")
+      .data(dataset)
+      .enter()
+      .append("path")
+      .attr('d',
+        (function(d) {
+          return lineGenerator(
+            [
+              [250, (height - unitHeight * d.t5yr)],
+              [400, (height - unitHeight * d.t10yr)],
+              [550, (height - unitHeight * d.t15yr)],
+              [700, (height - unitHeight * d.t20yr)]
+            ])
+        }))
+      .attr("stroke-width", stroke_width)
+      .attr("stroke", function(d) {
+        let color = "rgba(" + parseInt(255 - 2 * d.t5yr) + "," +
+          parseInt(2 * d.t20yr) + "," + parseInt(2 * d.t5yr) + " ,0.5)";
+        linesColor.push(color);
+        return color;
+      })
+      .attr("fill", "none")
+      .attr("class", "element")
+      .on("mouseover", onMouseOver)
+      .on("mouseout", onMouseOut)
+  }
+
 
   //Standard Error Labels
   for (var i = 0; i < 4; i++) {
