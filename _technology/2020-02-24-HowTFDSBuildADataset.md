@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How TFDS build a dataset - a survey study using XSUM as an example
+title: How TFDS build a dataset - A Survey Study Using XSUM as an Example
 date: '2020-02-24 15-45 -0400'
 published: true
-version: 1.0
+version: 1.1
 ---
 
 **Tensorflow Dataset** defines a unified wrapper for all kinds of dataset handling. Traditionally, to process a dataset, one needs to download a dataset, process them into the type that works for tensorflow.
