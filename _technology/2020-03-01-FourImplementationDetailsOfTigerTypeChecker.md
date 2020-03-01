@@ -3,7 +3,7 @@ layout: post
 title: 4 Implementation Details of Tiger Type Checker
 date: '2020-03-01 15:10 -0500'
 published: true
-version: 1.0
+version: 1.1
 ---
 
 So I wrapped my Tiger type checker assignment. It's 973 lines of code as of first
@@ -97,7 +97,7 @@ a --> T.NAME(a, ref b)
 b --> T.NAME(b, ref a)
 ```
 
-actual_ty will recursively dive into the ref part and strips away the T.NAME
+`actual_ty` will recursively dive into the ref part and strips away the T.NAME
 wrap. Notice it looks just like a graph traversal, each T.NAME is an edge. To
 detect cycle, simply record all nodes in a visited array, and check if current node
 is in that array.
@@ -117,11 +117,11 @@ We maintain the integrity of the stack in a functional manner. So we need to
 change the header of several methods to allow the stack as an argument.
 
 Specifically:
--  In `transexp`
+- In `transexp`
   - `A.ForExp`, `A.WhileExp`, `A.LetExp` will push a new entry to the
     stack
   - `A.BreakExp` and `A.AssignExp` need to check the stack.
--  In `transdec`
+- In `transdec`
   - `Vardec` should add all declared var ids to the stack top var list.
   - `Funcdec` should also add func ids to stack top var list. For each fundec,
   need to push a new entry to the stack and all the function arguments to it.
