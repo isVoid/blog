@@ -39,11 +39,11 @@ dependent module, denoted by square arrow. And inheritance means the module hold
 and attributes from parent class, denoted by angle arrow.
 
 <p style="display:block; text-align:center">
-<img height="560" src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_dependency.png" alt="dependency" style="max-height:400px; width:auto; height:auto"/>
+<img src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_dependency.png" alt="dependency" style="max-height:560px; width:auto; height:auto"/>
 </p>
 
 <p style="display:block; text-align:center">
-<img height="470" src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_inheritance.png" alt="dependency" style="max-height:400px; width:auto; height:auto"/>
+<img src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_inheritance.png" alt="dependency" style="max-height:470px; width:auto; height:auto"/>
 </p>
 
 ## TransformerModel
