@@ -3,7 +3,7 @@ layout: post
 title: Fairseq Transformer, BART
 date: '2020-03-14 20:00 -0400'
 published: true
-version: 1.1
+version: 1.2
 ---
 
 # Fairseq BART
@@ -38,9 +38,13 @@ modules as below. Note that dependency means the modules holds 1 or more instanc
 dependent module, denoted by square arrow. And inheritance means the module holds all methods
 and attributes from parent class, denoted by angle arrow.
 
-![dependency](https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_dependency.png)
+<p style="display:block; text-align:center">
+<img height="560" src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_dependency.png" alt="dependency" style="max-height:400px; width:auto; height:auto"/>
+</p>
 
-![inheritence](https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_inheritance.png)
+<p style="display:block; text-align:center">
+<img height="470" src="https://raw.githubusercontent.com/isVoid/isvoid.github.io/master/_technology/assets/Fairseq/Fairseq_Transformer_inheritance.png" alt="dependency" style="max-height:400px; width:auto; height:auto"/>
+</p>
 
 ## TransformerModel
 A `TransformerModel` has the following methods, see comments for explanation of the use
