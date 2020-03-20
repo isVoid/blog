@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Fairseq Distributed Training
+title: Fairseq Distributed Training Notes
 date: '2020-03-19 18:00 -0400'
 published: true
 ---
-
-# Fairseq Distributed Training Notes
 
 Fairseq distributed training is largely built on top of the distributed training feature provided by [Pytorch](https://pytorch.org/tutorials/intermediate/dist_tuto.html). A couple important notes from their tutorial that will be useful:
 1. The example provided in the tuorial is data-parallelism. It splits the training data to several different partitions and perform forward/backward pass independently on different machines, and average the gradients to update the parameter.

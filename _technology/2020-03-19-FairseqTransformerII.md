@@ -6,7 +6,6 @@ published: true
 version: 1.0
 ---
 
-# Fairseq BART (II)
 This is a 2 part tutorial for the Fairseq model BART. In the first part I have
 walked through the details how a Transformer model is built. Please refer to [part 1](http://yinghaowang.xyz/technology/2020-03-14-FairseqTransformer.html).
 
