@@ -6,7 +6,6 @@ published: true
 version: 1.2
 ---
 
-# Fairseq BART
 BART is a novel denoising autoencoder that achieved excellent result on Summarization.
 It is proposed by FAIR and a great implementation is included in its production grade
 seq2seq framework: fariseq. In this tutorial I will walk through the building blocks of
