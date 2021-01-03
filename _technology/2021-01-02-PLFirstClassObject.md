@@ -5,7 +5,8 @@ date: '2021-01-02 15:19'
 published: true
 ---
 
-This is a series of notes taken from the Coursera course: "Programming Language"
+This is a series of notes taken from the
+[Coursera course: "Programming Language"](https://www.coursera.org/learn/programming-languages)
 by professor Dan Grossman. I plan to chain these notes up with the catchy terms
 that I learnt from the course.
 
@@ -108,7 +109,7 @@ defining `adopt_charlie`, `a_dog` is bound to "Charlie". Inside care center,
 the *current* environment of evaluation has `a_dog` bound to "Milo". However,
 the actual evaluation of `my_action` used the environment at which the function
 is defined. Evaluating a funtion under the environment where it is *defined*,
-is called **Lexical scope** rules. Most modern programming languages follows
+is called **Lexical scope** rules. Most modern programming languages follow
 this rule.
 
 It has many benefits, one of them is that one can easily understands the 

@@ -16,6 +16,9 @@ for cat in subcategories:
     imglist = glob.glob(os.path.join(imagedir, '*.jpg'))
     thumblist = glob.glob(os.path.join(thumbdir, '*.jpg'))
 
+    imglist += glob.glob(os.path.join(imagedir, '*.png'))
+    thumblist += glob.glob(os.path.join(thumbdir, '*.png'))
+
     imglist = [im.split('/')[-1] for im in imglist]
     thumblist = [th.split('/')[-1] for th in thumblist]
 
