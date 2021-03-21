@@ -1,17 +1,82 @@
 ---
 layout: post
-title: PL:Delayed evaluation and thunks
+title: PL:HoF and Closure Idioms
 date: '2021-01-03 13:00'
 published: true
 ---
 
 This is a series of notes taken from the
 [Coursera course: "Programming Language"](https://www.coursera.org/learn/programming-languages)
-by professor Dan Grossman. I plan to chain these notes up with the catchy terms
-that I learnt from the course.
+by professor Dan Grossman.
 
-From our [last discussion]({% link _technology/2021-01-02-PLFirstClassObject.md %}) of higher order functions, functions can be evaluated, stored and passed as arguments just as other variables. Storing
-a function (closure) into a variable means something new to the code paths: it means we get to delay evaluation of some routines of your code until they are needed.
+From our [last discussion]({% link _technology/2021-01-02-PLFirstClassObject.md %}) of higher order functions, functions can be evaluated, stored and passed as arguments just as other variables. Storing a function (closure) into a variable means something new to the code paths: it means we get to delay evaluation of some routines of your code until they are needed.
+
+## Callbacks
+
+Everytime the user clicks a mouse, a mouse click event happens and triggers some functions to execute
+the corresponding behavior. Note that these functions are stored as **callbacks** and evaluated later.
+
+A common implementation pattern is event listeners. Several callback functions are registered
+as a listener of certain event. When some event happens, all registered functions all called.
+
+```python
+class EventListener:
+    cbs = []
+    def onEvent(self, f):
+        self.cbs.append(f)
+    def event(self, i):
+        for f in self.cbs:
+            f(i)
+
+def make_counter(typ):
+    cnt = 0
+    def any_event_counter(_):
+        nonlocal cnt
+        cnt += 1
+        print(f"Event happend {cnt} time(s)")
+    def press_event_counter(i):
+        nonlocal cnt
+        if "Press!" in i:
+            cnt += 1
+            print(f"Event press happend {cnt} time(s)")
+    return any_event_counter if typ == "any" else press_event_counter
+
+def make_event_detect():
+    def event_detector(i):
+        print(f"Event {i[7:]}")
+    return event_detector
+
+el = EventListener()
+el.onEvent(make_counter(typ="any"))
+el.onEvent(make_counter(typ="press"))
+el.onEvent(make_event_detect())
+
+el.event("Click! Left")
+el.event("Press! Button C")
+el.event("Press! Button B")
+```
+
+We see following output:
+```
+Event happend 1 time(s)
+Event Left
+Event happend 2 time(s)
+Event press happend 1 time(s)
+Event Button C
+Event happend 3 time(s)
+Event press happend 2 time(s)
+Event Button B
+```
+
+Here, we wrapped the callback functions under two factory functions - this is to create the proper
+closure for the functions to be called. Specifically, `event_counter` has internal variable `cnt`
+and will increment when event happens. When the factory method is run, a new `cnt` binding is created
+for the method to be returned. And each hold to their own copy of `cnt`. As shown in the output,
+`AnyEvent` happens 1 time more than `PressEvent`.
+
+## Thunks
+
+Thunks are function wrappers that delays their execution.
 
 Starting from a dumb example, that we want to define our own `if` statement in python. Notice that
 the syntax and semantics of `if` require the condition variable to be evaluated as `boolean`, and
@@ -46,7 +111,58 @@ code path will be excuted yet, so we want to delay their execution until appropr
 code paths are wrapped in a 0-argument, anonymous function, which is often called as 
 [`thunk`](https://en.wikipedia.org/wiki/Thunk).
 
-Next, a few common programming idioms related to `thunk` and delayed execution is introduced.
+## Function Compositing
+
+In functional programming, chaining several small functions into a big one is a common
+pattern. In mathematics, we also do compositions like `h = g(f(x))` to denote for h being a function that first apply `f` then apply `g`. In python, this is rather similar.
+
+```python
+def compose(*funcs):
+    import functools
+    def _helper(g, f):
+        return lambda x: g(f(x))
+    return functools.reduce(_helper, funcs, lambda x:x)
+
+def sqrt(x):
+    return x*x
+
+def minus3(x):
+    return x - 3
+
+def times4(x):
+    return x*4
+
+f = compose(sqrt, minus3, times4) # f(x) = (x*4-3)^2
+```
+We made use of thunks here. Inside compose, starting from an idendity function which
+represents the function input `x`, and gets folded over the list of fucntions, each
+time `x` is being wrapped in one extra layer.
+
+## Currying and Partial Application
+
+I would love to talk about currying here, but it would not really mean anything inside
+a dynamically typed language like Python. On a high level, currying functions sees a function of several arguments as a function that accepts the first argument, and returns a function that takes in the second argument, and returns a function recursively until the last argument is consumed, and returns the return type.
+
+Basically, a function that takes in a `int`, `string` and `float` and returns a `bool` is actually a function that takes in an `int`, returns a function that takes in a `string`, returns a function that takes in a `float` and returns a `bool`.
+```
+int -> string -> float -> bool
+```
+
+The reason why the second returned function `string->float->bool` has access to the first argument `int` is because of closure. When the function is defined, the closure rule makes sure its environment will stay with the function, and this includes the first `int` argument.
+
+When multi-argument functions can be decomposed like this, partial application becomes
+easily understadable. We choose to bind several arguments in the function, but not all
+of them, to create a new function with fewer arguments. In python:
+
+```python
+import functools
+def f(x, y, z):
+    return (x + y) * z
+
+g = functools.partial(2, 3) # g(z) = 5 * z
+```
+
+Finally, the naming of currying origins from Haskell Curry.
 
 ## Promises, delay/force
 

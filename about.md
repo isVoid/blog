@@ -6,10 +6,10 @@ layout: page
 title: About
 ---
 
-I am Yinghao Wang (Michael), a Yale University Master student on Computer Science.
-I have a passion for Computer Graphics and Computational Photography. During college
-I designed computer vision algorithms to detect objects for UAVs. In another
-project, I designed a paper extraction algorithm to for easy savings of notes.
+I am Yinghao Wang (Michael), I'm a Rapids SWE in Nvidia Rapids.
+
+During college I designed computer vision algorithms to detect objects for UAVs. In another project, I designed a paper extraction algorithm to for easy savings of notes.
+I graduated from Yale University in 2020.
 
 I am honored to follow the award winning photographer, timelapse master Thomas Lowe
 in production of a novel genre narrative - AWAKEN. I have assisted in image processing,

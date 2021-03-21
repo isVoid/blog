@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Programming Language:Higher-order functions and closures
+title: PL:Higher-order functions and closures
 date: '2021-01-02 15:19'
 published: true
 ---
 
 This is a series of notes taken from the
 [Coursera course: "Programming Language"](https://www.coursera.org/learn/programming-languages)
-by professor Dan Grossman. I plan to chain these notes up with the catchy terms
-that I learnt from the course.
+by professor Dan Grossman.
 
-In programming language, higher-order functions and closures are often two
-closely related concepts that needs to be discussed together.
+In this note and next one, I will discuss higher-order functions and their applications.
+
+One key feature that distincts functional programming is higher order functions. Higher
+order function and closures are often two closely related topics that discusses together.
+We start by looking at their uses in Python, then we'll take a quick look at
+how they can be implemented in C.
 
 ## Funcion as first class objects
 
@@ -29,9 +32,9 @@ def concat_myname(s):
     return s + 'Michael'
 apply('Hello', concat_myname)
 
-def double(d):
+def square(d):
     return d * d
-apply(3, double)
+apply(3, square)
 ```
 
 In this somewhat naive example, we see that function as first class objects
@@ -40,6 +43,11 @@ dependent on primitive types, but also dependent on function behaviors.
 Frequent use cases are `map`, `reduce` and `filter` . Their behaviors are:
 
 ```python
+"""
+Note that recursion is highly discouraged in python. The code here is purely
+for demonstration purposes. Use python's native `map`, `sum` and list comprehension
+for real world applications.
+"""
 def mymap(l, f):
     if len(l) == 0:
         return []
@@ -123,39 +131,57 @@ and the bindings together creates a closure. Thus, when we defines a function
 inside our code, we are actually adding a new binding of the function name
 to its closure into the environment.
 
-In languages that does not support higher order functions such as `C`, we could
-simulate the behavior with function pointers, except, we need to also pass the
-bindings as an extra argument. For example:
+In languages that does not support higher order functions such as `C`, a closure
+can be emulated with a struct of the reference to the function and the environment
+where the function is created. For example:
 
-```C
+```C++
 #include "stdio.h"
-/* A simplified environment structure */
+/* A simplified environment structure, name value pairs */
 struct Env
 {
     char **names;
-    int **values;
+    void **values;
+
+    Env* deep_copy(); /* Create a deep copy of the environment */
 };
 
-/* Same apply as above */
-void apply(void* x, void (*f)(void*, struct Env*), struct Env* f_env)
+/* A closure consists of the function and the environment in which it was created */
+struct Closure
 {
-    f(x, f_env);
+    void* (*func)(void*, Env*);
+    Env* env;
+};
+
+/* Function to create a var named `name` initialized with `values` inside `env` 
+ * Return a new env
+*/
+Env* createVar(const char* name, void *values, Env *env) {
 }
 
-/* Can retrieve free variables from my_env here */
-void power_of_2(void *x, struct Env* my_env)
-{
-    int *i_x = (int*)x;
-    *i_x = (*i_x) * (*i_x);
+/* Retrieve the value of variable `name` from `env`
+*/
+void* getVar(char* name, Env *env) {
 }
 
+/* Demo function that requires to use some variable in the environment */
+void* some_function(void* x, Env* my_env){
+    void* some_val = getVar("X", my_env);
+    /* Do something with some_val */
+}
+
+/* demo usage
+ * A function is created under env1, and will be evaluated with env1.
+ */
 int main()
 {
-    struct Env some_env; // Empty env upon definition
-    int n = 4;
-    apply((void*)&n, power_of_2, &some_env);
-    printf("%d\n", n); // 16
-    return 0;
-}
+    Env *env1;
+    env1 = createVar("X", some_val, env1);
+    Closure closure{some_function, env1->deep_copy()} // Closure created with a copy of the environment and function
 
+    /* Environment has changed, possibly variable X was shadowed*/
+
+    /* Use some_function under env1 */
+    void* res = closure.func(arg, closure.env);
+}
 ```
