@@ -6,8 +6,7 @@ published: true
 ---
 
 This is a series of notes taken from the
-[Coursera course: "Programming Language"](https://www.coursera.org/learn/programming-languages)
-by professor Dan Grossman.
+[Coursera course: "Programming Language"](https://www.coursera.org/learn/programming-languages).
 
 From our [last discussion]({% link _technology/2021-01-02-PLFirstClassObject.md %}) of higher order functions, functions can be evaluated, stored and passed as arguments just as other variables. Storing a function (closure) into a variable means something new to the code paths: it means we get to delay evaluation of some routines of your code until they are needed.
 
