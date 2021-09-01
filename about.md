@@ -32,7 +32,7 @@ I am fluent in Chinese and English, with intro level skill in Japanese.
 
   <ul>
   <li> I am fond of outdoor activities. Hiking and camping are one of them. I also jog on a regular basis. </li>
-  <li> To the far contrary, I also like nerdy stuff. Embedded system developments, nostalgic movies/anime and subculture topics etc. </li>
+  <li> To the far contrary, I also like nerdy stuff. Embedded system developments and nostalgic movies/anime etc. </li>
   </ul>
 </details>
 
