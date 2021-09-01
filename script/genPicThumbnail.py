@@ -9,7 +9,6 @@ parent = './photos/'
 subcategories = ['cityscape', 'myself', 'naturalhistory']
 
 for cat in subcategories:
-# cat = 'naturalhistory'
     imagedir = os.path.join(parent, cat)
     thumbdir = os.path.join(imagedir, 'thumb')
 

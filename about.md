@@ -1,27 +1,40 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
 title: About
 ---
 
-I am Yinghao Wang (Michael), I'm a Rapids SWE in Nvidia Rapids.
+My name is Yinghao Wang (Michael), and I'm a Rapids SWE in Nvidia Rapids.
 
-During college I designed computer vision algorithms to detect objects for UAVs. In another project, I designed a paper extraction algorithm to for easy savings of notes.
-I graduated from Yale University in 2020.
+I contributed extensively in [cudf](https://github.com/rapidsai/cudf). My responsibilities
+includes designing new features, code quality maintainance and bug fixes. I code in both
+modern c++ and python.
 
-I am honored to follow the award winning photographer, timelapse master Thomas Lowe
-in production of a novel genre narrative - AWAKEN. I have assisted in image processing,
-editorial and data management in this 6-year-long project. I adopted techniques such
-as neural networks to handle extreme hard case for some of the footages.
+During graduate school studies at Yale, I designed and coded a distributed raytracing
+engine to render 3D graphics world. And I implemented a compiler for the Tiger language.
+During undergraduate school, I implemented a rectangle segmentation algorithm to detect
+photo with paper notes and extract them as single images.
+I graduated from Yale University in 2020 as master of science. And graduated from
+Sun Yat-Sen University as bachelor in engineering in 2018.
+
+During my early years, I am honored to follow the award winning filmmaker, timelapse master
+Thomas Lowe in production of a novel genre narrative - [AWAKEN](https://itunes.apple.com/us/movie/awaken/id1560184681).
+I have assisted in image processing, editorial and data management in this evolving project. I adopted techniques such
+as [neural networks](https://github.com/isVoid/DenoiseNet) to handle extreme hard case for some of the footages.
 
 I grow to become a photography enthusiast. Throughout my trip across the globe and
 meetings with artists, I developed my own perspectives in natural history and cityscape
-photography.
+photography. Checkout my page on photography for more.
 
-I am English-Chinese bilingual. My native language is Chinese, with proficiency
-in English writing, speaking, listening and reading.
+I am fluent in Chinese and English, with intro level skill in Japanese.
+
+<details>
+<summary>Trivia</summary>
+
+  <ul>
+  <li> I am fond of outdoor activities. Hiking and camping are one of them. I also jog on a regular basis. </li>
+  <li> To the far contrary, I also like nerdy stuff. Embedded system developments, nostalgic movies/anime and subculture topics etc. </li>
+  </ul>
+</details>
 
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
@@ -29,6 +42,11 @@ in English writing, speaking, listening and reading.
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <div id="aboutrow" class="wrapper">
+  <div class="column">
+    <a data-fancybox="myself" href="/photos/myself/grand_sand_dune.jpg" data-caption="The grand sand dune NP, CO">
+        <img src="/photos/myself/thumb/thumb_grand_sand_dune.jpg">
+      </a>
+  </div>
   <div class="column">
     <a data-fancybox="myself" href="/photos/myself/Kili.jpg" data-caption="Kilimanjaro peak">
         <img src="/photos/myself/thumb/thumb_Kili.jpg">
